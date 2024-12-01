@@ -1,27 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    serverComponentsExternalPackages: ['jszip', 'cheerio', 'jsdom']
+    serverComponentsExternalPackages: ['jszip', 'cheerio', 'jsdom'],
+    serverActions: {
+      bodySizeLimit: '50mb'
+    }
   },
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '**',
-        pathname: '**',
       },
       {
         protocol: 'http',
         hostname: '**',
-        pathname: '**',
       }
     ],
+    unoptimized: true,
     minimumCacheTTL: 60,
+    formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    formats: ['image/webp'],
-    dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -31,10 +31,6 @@ const nextConfig = {
         buffer: require.resolve('buffer/'),
       };
     }
-    config.module.rules.push({
-      test: /node_modules\/undici\/.*\.js$/,
-      type: 'javascript/auto',
-    });
     return config;
   },
 }

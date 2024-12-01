@@ -1,19 +1,27 @@
 {
-  "name": "website-downloader",
+  "name": "flashified",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/flashified.git"
+  },
+  "author": {
+    "name": "Bhavesh Patil",
+    "url": "https://iambhvsh.vercel.app"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "prod": "next build && next start"
+    "vercel-build": "next build"
   },
   "dependencies": {
     "axios": "1.6.2",
     "buffer": "^6.0.3",
     "cheerio": "1.0.0-rc.12",
-    "crypto": "^1.0.1",
     "framer-motion": "^11.12.0",
     "jsdom": "^24.1.3",
     "jszip": "^3.10.1",
@@ -25,6 +33,7 @@
     "react-icons": "^5.3.0",
     "react-intersection-observer": "^9.13.1",
     "sanitize-filename": "^1.6.3",
+    "sharp": "^0.33.5",
     "stream-browserify": "^3.0.0"
   },
   "devDependencies": {
