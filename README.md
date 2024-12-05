@@ -1,11 +1,8 @@
 # Flashified 🚀
-
 A purr-fectly powerful bulk image downloader and web crawler built with Next.js! 😺
 
 ## ⚠️ Legal and Ethical Warnings
-
 **IMPORTANT: By using Flashified, you agree to the following terms:**
-
 - 🚨 Use this tool ONLY on websites where you have explicit permission
 - 🔒 Respect robots.txt and website terms of service
 - 🛑 Do NOT crawl or download content from:
@@ -16,8 +13,9 @@ A purr-fectly powerful bulk image downloader and web crawler built with Next.js!
 - 📜 You are solely responsible for ensuring legal compliance
 - ⚖️ The developers are not liable for misuse of this tool
 
-## ✨ Features
+> **⚠️ Current Limitation:** Due to an ongoing bug, the app currently crawls primarily Vercel-hosted sites with more reliable results. The developer, being busy, cannot update the crawler at the moment. Advanced users are encouraged to fork the repository and implement fixes to expand crawler compatibility. Pull requests are welcome! 🛠️
 
+## ✨ Features
 - 📥 Download images from any website with a single click
 - 🖼️ Smart detection of high-quality images 
 - 🔄 Purr-fect support for lazy-loaded images
@@ -34,7 +32,6 @@ A purr-fectly powerful bulk image downloader and web crawler built with Next.js!
 - 🌙 Dark mode support
 
 ## 🛠️ Tech Stack
-
 - Node.js - Backend runtime
 - Next.js 14 - The purr-fect React framework
 - TypeScript - For type-safe code
@@ -51,7 +48,6 @@ A purr-fectly powerful bulk image downloader and web crawler built with Next.js!
 - Vercel - Deployment platform
 
 ## 🌟 Key Benefits
-
 - 🚄 Blazing fast performance
 - 🎯 High accuracy image detection
 - 🔍 Smart filtering capabilities
@@ -60,18 +56,15 @@ A purr-fectly powerful bulk image downloader and web crawler built with Next.js!
 - 🎨 Clean, intuitive interface
 
 ## 🚀 Getting Started
-
 First, let's get this kitty purring! 😺
 
 1. Clone this paw-some repository:
-
 ```bash
 git clone https://github.com/iambhvsh/flashified.git
 cd flashified
 ```
 
 2. Install dependencies:
-
 ```bash
 npm install
 # or
@@ -81,7 +74,6 @@ pnpm install
 ```
 
 3. Run the development server:
-
 ```bash
 npm run dev
 # or
@@ -91,22 +83,18 @@ pnpm dev
 ```
 
 ## 🔧 Configuration
-
 Create a `.env.local` file in the project root and add:
-
 ```bash
 NEXT_PUBLIC_API_URL=/api 
 ```
 
 ## 📝 Usage Guidelines
-
 - Always obtain proper authorization before scraping
 - Implement rate limiting to prevent overloading servers
 - Respect website owners' bandwidth and resources
 - Use for educational, research, or permitted purposes only
 
 ## 🤝 Contributing
-
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/new-feature`)
 3. Commit your changes (`git commit -m 'Add some new feature'`)
@@ -114,13 +102,10 @@ NEXT_PUBLIC_API_URL=/api
 5. Open a Pull Request
 
 ## 📄 License
-
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🐾 Contact
-
 Bhavesh Patil - [@iambhvsh](https://twitter.com/iambhvsh)
-
 Project Link: [https://github.com/iambhvsh/flashified](https://github.com/iambhvsh/flashified)
 
 ---
